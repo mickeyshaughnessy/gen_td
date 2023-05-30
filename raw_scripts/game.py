@@ -5,7 +5,7 @@ import pygame
 pygame.init()
 
 # Set up the game window and background color
-win = pygame.display.set_mode((800, 600))
+win = pygame.display.set_mode((600, 600))
 win.fill((255, 255, 255))
 pygame.display.set_caption("Tower Defense")
 
@@ -27,7 +27,10 @@ while running:
         elif event.type == pygame.MOUSEBUTTONDOWN:
             # Move the tower to the mouse position
             tower_rect.center = event.pos    
-
+        # Check to see if the player placed towers or troops
+        # Check to see if the server updated the game
+        
+         
     # Update the game state
 
     # Draw the game
